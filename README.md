@@ -8,4 +8,4 @@
 - ionic search = good enough, icons seem fine, sass editing.. didnt go well (but primary,secondary, favorites are seem to be working.. yet.)
 - used a free JSON hoster (da fuck? good idea right here bro)
 - app.ts has initiation function called platform.ready (document.ready jQuery-wanna-be-much eh?) dig into it, may be fun)
-- BIG BIG BIG IMPROVEMENT.. j/k. Just look for search page animations fade-in/out (may just simply fail to do so on ios/android) 
+- BIG BIG BIG IMPROVEMENT.. j/k. Just look for search page animations fade-in/out (may just simply fail to do so on ios/android, didnt understand what it says here? meetfeed bruh.. remember the search anims)
