@@ -1,2 +1,3 @@
 # cysecdict
-"" soon to be updated
+- soon to be updated
+- bluebyte? sounds fine
