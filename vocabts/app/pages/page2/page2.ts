@@ -1,54 +1,33 @@
 import {Page} from 'ionic-angular';
+import {Http} from 'angular2/http';
+import 'rxjs/add/operator/map';
+
 export interface Page2{
      items:string[];
      searchQuery:any;
      initializeItems();
+     http:any;
 }
+export let constlar:any;
 
 @Page({
   templateUrl: 'build/pages/page2/page2.html',
 })
 
 export class Page2{
-  constructor() {
-    this.searchQuery = '';
-    this.initializeItems();
-  }
-  
-  initializeItems() {
-    this.items = [
-     'running: çalışan',
-     'host: ana makine',
-     'unauthorized: yetkisiz',
-     'vulnerability: zafiyet',
-     'homepage: anasayfa',
-     'dictionary: sözlük',
-     'dos: denial-of-service',
-     'device: aygıt',
-     'transmit: iletmek',
-     'cleartext: düz metin',
-     'remote: uzak',
-     'session: oturum',
-     'eavesdrop: dinleme yapmak',
-     'mitigate: hafifletmek',
-     'context: içerik',
-     'browser: tarayıcı',
-     'render: sunmak',
-     'request: istek',
-     'provide: temin etmek',
-     'sensitive: hassas',
-     'obtain: ele geçirmek',
-     'validation: onaylama',
-     'encoded: şifrelenmiş'
-     
-    ];
     
-  }
-  countItems(){
-      this.initializeItems();
-      return this.items.length;
+  constructor(http: Http) {
+    this.searchQuery = '';
+    this.http=http;
+	this.http.get('https://api.myjson.com/bins/142if').map(res => res.json()).subscribe(data => {
+    this.items = data;
+    constlar = this.items;
+        });
   }
 
+  initializeItems() {
+      this.items=constlar;
+  }
   getItems(searchbar) {
     // Reset items back to all of the items
     this.initializeItems();
