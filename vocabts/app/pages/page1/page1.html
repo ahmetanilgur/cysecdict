@@ -1,29 +1,37 @@
 <ion-navbar favorite *navbar>
-  <ion-title>EY</ion-title>
+    <ion-title>EY</ion-title>
 </ion-navbar>
-<ion-content padding class="page1">  
+<ion-content padding class="page1">
     <ion-card>
-  <ion-card-content>
-    <ion-card-title>
-      Vocabbuddy
-      </ion-card-title>
-  <p>
-      The main reason behind the tought of creating an application was to eliminate simple but time-wasting tasks on daily works.
-      For now, we will be supporting simple keywords used whilst Cyber Security report drafts are being translated.
-  </p>
-  <p>
-   As Vocabbuddy we aim to:
-    <br>
-    <br>
-    <li>Decrease time spent on searching words on-line</li>
-    <li>Study out a better translation on specific words in CS jargon</li> 
-    <li>Find out what did your superiors decide when they took parts in translation processes</li>
-  </p>
-  <ion-item>
-  <ion-icon name="md-globe" item-left></ion-icon>
-  # of translated keywords:
-  <ion-badge item-right>8</ion-badge>
-</ion-item>
-  </ion-card-content>
-</ion-card>
+        <ion-card-content>
+            <ion-card-title>
+                Vocabbuddy
+            </ion-card-title>
+            <p>
+                The main reason behind the tought of creating an application was to eliminate simple but time-wasting tasks on daily works.
+                For now, we will be supporting simple keywords used whilst Cyber Security report drafts are being translated.
+                <br>
+                <br>
+            </p>
+            <p>
+                As Vocabbuddy we aim to:
+                <br>
+                <br>
+                <li><b>Decrease time</b> spent on searching words on-line</li>
+                <li>Study out a <b>better translation</b> on specific words in CS jargon</li>
+                <li>Find out what did your superiors <b>decide</b> when they took parts in translation processes</li>
+            </p>
+            <ion-item>
+                <ion-icon name="md-key" item-left></ion-icon>
+                # of translated keywords:
+                <ion-badge item-right>{{items}}</ion-badge>
+                <br>
+            </ion-item>
+            <ion-item>
+                <ion-icon name="md-person" item-left></ion-icon>
+                # of contributors:
+                <ion-badge item-right>1</ion-badge>
+            </ion-item>
+        </ion-card-content>
+    </ion-card>
 </ion-content>

@@ -2,6 +2,7 @@ import {Page} from 'ionic-angular';
 export interface Page2{
      items:string[];
      searchQuery:any;
+     initializeItems();
 }
 
 @Page({
@@ -13,19 +14,39 @@ export class Page2{
     this.searchQuery = '';
     this.initializeItems();
   }
-
+  
   initializeItems() {
     this.items = [
-     'Running: Çalışan',
-     'Host: Ana makine',
-     'Unauthorized: Yetkisiz',
-     'Vulnerability: Zafiyet',
-     'Homepage: Anasayfa',
-     'Dictionary: Sözlük',
-     'DoS: Denial-of-Service',
-     'Device: Aygıt'
+     'running: çalışan',
+     'host: ana makine',
+     'unauthorized: yetkisiz',
+     'vulnerability: zafiyet',
+     'homepage: anasayfa',
+     'dictionary: sözlük',
+     'dos: denial-of-service',
+     'device: aygıt',
+     'transmit: iletmek',
+     'cleartext: düz metin',
+     'remote: uzak',
+     'session: oturum',
+     'eavesdrop: dinleme yapmak',
+     'mitigate: hafifletmek',
+     'context: içerik',
+     'browser: tarayıcı',
+     'render: sunmak',
+     'request: istek',
+     'provide: temin etmek',
+     'sensitive: hassas',
+     'obtain: ele geçirmek',
+     'validation: onaylama',
+     'encoded: şifrelenmiş'
      
     ];
+    
+  }
+  countItems(){
+      this.initializeItems();
+      return this.items.length;
   }
 
   getItems(searchbar) {
