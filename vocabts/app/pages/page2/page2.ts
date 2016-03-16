@@ -1,8 +1,13 @@
 import {Page} from 'ionic-angular';
+export interface Page2{
+     items:string[];
+     searchQuery:any;
+}
 
 @Page({
   templateUrl: 'build/pages/page2/page2.html',
 })
+
 export class Page2{
   constructor() {
     this.searchQuery = '';
