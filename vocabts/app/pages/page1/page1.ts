@@ -6,7 +6,6 @@ import 'rxjs/add/operator/map';
 export interface Page1{
 	items:number;
 	http:any;
-	posts:any;
 }
 @Page({
   templateUrl: 'build/pages/page1/page1.html',
