@@ -1,1 +1,12 @@
 # cysecdict
+- soon to be updated
+- bluebyte? sounds fine
+- recursive constructor:nope (well not yet? maybe?)
+- exportable let on the top of .ts > temp backup data takes from JSON > initialize every event > temp = old data
+- couchdb? mongodb? must be hostable w/o payment needs
+- http package from angular2/http worked fine to make requests GET/POST(didnt try post yet) [no need to use ajax]
+- ionic search = good enough, icons seem fine, sass editing.. didnt go well (but primary,secondary, favorites are seem to be working.. yet.)
+- used a free JSON hoster (da fuck? good idea right here bro)
+- app.ts has initiation function called platform.ready (document.ready jQuery-wanna-be-much eh?) dig into it, may be fun)
+- BIG BIG BIG IMPROVEMENT.. j/k. Just look for search page animations fade-in/out (may just simply fail to do so on ios/android, didnt understand what it says here? meetfeed bruh.. remember the search anims)
+- kurcala behçet http://ionicframework.com/docs/v2/api/platform/storage/LocalStorage/ transfer the constant keyword list to localstorage (had an error while reloading the list) WEIRD!!!<<<lololo>>
